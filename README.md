@@ -41,7 +41,7 @@ This project is a web-based weather forecasting application that provides real-t
 Below are some screenshots of the application:
 
 
-![RUNNING PAG]("C:/Users/rglra/Desktop/Pictures/Screenshots/runningpage.png")
+![RUNNING PAG]("C://Users//rglra//Desktop//Pictures//Screenshots//runningpage.png")
 
 ![Home Page]("C:/Users/rglra/Desktop/Pictures/Screenshots/homepage.png")
 
