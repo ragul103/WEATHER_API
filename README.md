@@ -41,7 +41,7 @@ This project is a web-based weather forecasting application that provides real-t
 Below are some screenshots of the application:
 
 
-![RUNNING PAG]("C://Users//rglra//Desktop//Pictures//Screenshots//runningpage.png")
+![RUNNING PAG](https://raw.githubusercontent.com//ragul103//WEATHER_API//main//"C://Users//rglra//Desktop//Pictures//Screenshots//runningpage.png")
 
 ![Home Page]("C:/Users/rglra/Desktop/Pictures/Screenshots/homepage.png")
 
@@ -63,5 +63,5 @@ To use the OpenWeather API, you need to obtain an API key:
 This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contact
-For any queries or contributions, feel free to contact me at [your-ragulrbtechit@gmail.com] or visit my GitHub profile: [GitHub](https://github.com/ragul103).
+For any queries or contributions, feel free to contact me at [ragulrbtechit@gmail.com] or visit my GitHub profile: [GitHub](https://github.com/ragul103).
 
