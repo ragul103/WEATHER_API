@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$backgrounColor:#f8f7ff;
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+font-size: 16px;
+}
+
+@media screen and (min-width:450px) {
+
+    header{
+        font-family: 'Roboto';
+        height: 15vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 10%;
+        background-color: #b8b8ff;
+    
+        h1{
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #fff;
+            font-size: 36px;
+        } 
+    }
+    
+    .main{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $backgrounColor;
+    
+        height: 85vh ;
+        width: 100%;
+        
+    } 
+    
+    .container{
+        width: 90%;
+        margin: auto;
+        // display: flex;
+        // justify-content: space-evenly;
+        
+        background-color: $backgrounColor;
+        padding:5%;
+    }
+    
+    .inp{
+        color: #cdb4db;
+        .search{
+    
+            display: flex;
+            input{
+                padding: 6px 12px;
+                background-color: #bde0fe;
+                border: 2px solid #a2d2ff;
+            }
+            button{
+                background-color: #bde0fe;
+                border: 2px solid #a2d2ff;
+                color: #14213d;
+    
+                padding: 6px 6px;
+            }
+        }
+        #autoLocateBtn{
+            background-color: #bde0fe;
+                border: 2px solid #a2d2ff;
+                color: #14213d;
+    
+                padding: 6px 6px;
+        }
+    }
+    
+    .details{
+        margin: 5% 0 0 0;
+    
+        display: flex;
+        justify-content: space-between;
+    
+        padding: 0 10%;
+    
+        &-temp{
+            display: flex;
+            &--icon{ 
+                height: 150px ;
+                width: 250px;
+            } 
+            #iconImg{         
+                width: 150px;
+            }
+    
+            &--info{
+                #temp,#temperature{
+                    font-size:32px ;
+                    margin-bottom: 8px ;
+                    display: flex;
+                }
+    
+                .btn{
+                    background-color:#bde0fe ;
+                    border: 2px solid #a2d2ff;
+                    cursor: pointer;
+                    padding: 6px 12px ;
+                    margin: 2px 0 16px 0;
+                }
+                .showText{
+                    margin: 8px 0;
+                }
+            }
+        }
+    &-location{
+        text-align: right;
+        h2,#locationName{
+            font-size: 32px;
+        }
+    }
+    }
+
+}
+
+
+
+
+// style for mobile
+@media screen and (max-width: 390px) {
+
+    header{
+        font-family: 'Roboto';
+
+        height: 10vh;
+        width: 100%;
+
+        display: flex;
+        justify-content:center;  
+        align-items: center;
+
+        padding:0 10%;
+        background-color: #b8b8ff;
+    
+        h1{
+       display: none;          
+        } 
+
+        img{
+            width: 250px;
+        } 
+    }
+    
+    .main{
+    
+        background-color: $backgrounColor;
+    
+        width: 100%;
+        height:90vh;
+        .container{
+            width: 80%;
+
+            margin: auto;   
+
+            height: 100%;
+
+            padding: 5% 0;
+    
+            background-color: $backgrounColor;
+
+            .inp{  
+                color: #cdb4db;
+        
+                .search{
+                    display: flex;
+                    justify-content: center;
+           
+          
+                    input{              
+                        padding: 2px 4px;
+                        background-color: #bde0fe;
+                        border: 2px solid #a2d2ff;
+                    }
+                    button{
+                        background-color: #bde0fe;
+                        border: 1px solid #a2d2ff;
+                        color: #14213d;
+               
+                        padding: 2px 2px; 
+                    }
+                }  
+                .autodiv{
+                    display: flex;
+                    justify-content: center;
+
+                    width: 100% ;
+                    #autoLocateBtn{
+
+                        background-color: #bde0fe;
+                            border: 1px solid #a2d2ff;
+                            color: #14213d;
+                            padding: 4px 10px;          
+                            margin: 15px 0 ;
+                     }
+                }
+               
+            }
+            .details{
+                background-color: $backgrounColor;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column ;
+
+                height: 90%;
+                width: 100%;
+                 
+                &-temp{
+
+                    &--icon{ 
+                        height: 75px ;
+                        width: 150px; 
+                        #iconImg{         
+                            width: 100px;
+                        }
+                
+                    } 
+               
+                    &--info{
+                        margin:48px 0 0 0;
+                        #temp,#temperature{
+                            font-size:32px ;
+                            margin-bottom: 8px ;
+                            display: flex;
+                        }
+            
+                        .btn{
+                            background-color:#bde0fe ;
+                            border: 2px solid #a2d2ff;
+                            cursor: pointer;
+                            padding: 6px 12px ;
+                            margin: 2px 0 16px 0;
+                        }
+                        .showText{
+                            margin: 8px 0;
+                        }
+                    }   
+                }
+                &-location{
+                    margin-top: 16px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .locationDiv
+                    {
+                        text-align: right;
+                        h2,#locationName{
+                            font-size: 24px;
+                        }
+                    }
+              
+                }
+            }
+        }
+    } 
+   
+}

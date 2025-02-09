@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER</title>
+
+    <!-- local file -->
+    <link rel="stylesheet" href="./asset/css/main.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./asset/img/WEATHER API (Logo).png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- start of main -->
+    <header>
+      <img src="./asset/img/WEATHER API (Logo).png" alt="" />
+      <h1>*WEATHER RESULTS*</h1>
+    </header>
+    <main class="main">
+      <section class="container">
+        <!-- start of container -->
+
+        <div class="inp">
+          <!-- start of inp -->
+
+          <section class="search">
+            <label for="locate">
+              <input
+                type="text"
+                name="locate"
+                id="locate"
+                placeholder="enter location"
+              />
+              <!-- <i class="fa-solid fa-magnifying-glass-location"></i> -->
+            </label>
+
+            <button
+              class="inp-btn-"
+              type="button"
+              id="searchBtn"
+              aria-keyshortcuts="enter"
+            >
+              search
+            </button>
+          </section>
+          <div class="autodiv">
+            <button class="inp-btn-" type="button" id="autoLocateBtn">
+              auto locate
+            </button>
+          </div>
+
+          <!-- end of inp -->
+        </div>
+
+        <div class="details">
+          <!-- start of details -->
+
+          <section class="details-temp">
+            <!-- start of details of temperature -->
+
+            <div class="details-temp--icon" id="weatherIcon">
+              <img
+                src=""
+                alt="icon-weather"
+                id="iconImg"
+                style="display: none"
+              />
+            </div>
+
+            <div class="details-temp--info">
+              <h2 id="temp">Temp: <span id="temperature"> </span></h2>
+
+              <button id="celsiusBtn" class="btn">&#176;c</button>
+
+              <button id="fahrenheitBtn" class="btn">&#176;f</button>
+
+              <p class="showText">Wind: <span id="windSpeed"></span>km/p</p>
+              <p class="showText">Humidity: <span id="humidity"></span>%</p>
+              <p class="showText">cloud: <span id="cloud"></span>%</p>
+            </div>
+            <!-- start of details of temperature -->
+
+            <!-- end of output -->
+          </section>
+          <section class="details-location">
+            <div class="locationDiv">
+              <h2 class="showText"><span id="locationName"></span></h2>
+              <p class="showText"><span id="date"></span></p>
+              <p class="showText"><span id="weatherText"></span></p>
+            </div>
+          </section>
+
+          <!-- end of details -->
+        </div>
+
+        <!-- end of container -->
+      </section>
+    </main>
+
+    <!-- end of main -->
+
+    <!-- script file -->
+    <script src="./asset/script/script.js"></script>
+
+    <!--FONTAWESOME file -->
+    <script
+      src="https://kit.fontawesome.com/efb4e8ba98.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
